@@ -1,0 +1,15 @@
+name: 'Quote of the day'
+author: 'Akhil'
+description: 'Updates README with a quote of the day'
+inputs:
+  category:
+    description: 'Quote category to fetch'
+    required: false
+    default: 'inspire'
+  readme_path:
+    description: 'Path of readme file to update'
+    default: "./README.md"
+    required: false
+runs:
+  using: 'node12'
+  main: 'index.js'
